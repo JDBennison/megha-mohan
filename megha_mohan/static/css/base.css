@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+}
+
+body {
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-font {
+    text-transform: uppercase;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.subtitle-font {
+    text-transform: uppercase;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.bg-gray {
+    background-color: #CED4DA !important;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000;
+    font-size: x-large;
+}
+
+.header-container {
+    padding-top: 83px;
+}
