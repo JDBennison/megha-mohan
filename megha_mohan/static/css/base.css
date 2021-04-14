@@ -14,6 +14,12 @@ body {
     font-size: xx-large;
 }
 
+.header-font {
+    font-family: 'Almarai', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
 .subtitle-font {
     text-transform: uppercase;
     font-family: 'Almarai', sans-serif;
@@ -37,4 +43,12 @@ body {
 
 .header-container {
     padding-top: 83px;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.form-group {
+    margin-bottom: 10px;
 }

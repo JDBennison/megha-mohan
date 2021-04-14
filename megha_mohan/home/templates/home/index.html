@@ -10,4 +10,49 @@
 {% endblock %}
 
 {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 d-none d-md-block p-5">
+            <img src="{{ MEDIA_URL }}/megha1.png" class="rounded-circle img-fluid" alt="Megha">
+        </div>
+        <div class="col-xs-12 col-md-8 my-auto py-4">
+            <p>As of September 2018, Megha Mohan is the BBC's first Gender and Identity Correspondent.
+            </p>
+            <p>Prior to that she was a senior multimedia staff reporter at the BBC’s Digital Current
+                Affairs department. There, she told stories on subcultures across Asia, Africa, the US and Europe, with
+                a
+                focus on gender</p>
+            <p>Want to work with her?</p>
+            <div class="col-12 text-center">
+                <a href="#" class="btn btn-secondary btn-lg rounded-0 text-uppercase">Contact Megha</a>
+            </div>
+            <div class="d-md-none p-5 text-center">
+                <img src="{{ MEDIA_URL }}/megha1.png" class="rounded-circle img-fluid" alt="Megha">
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<h2 class="header-font">Recent Work</h2>
+<hr>
+<div class="container contact-form pb-4">
+    <div class="row py-3">
+        <div class="col-12 my-auto">
+            <h2 class="header-font">Contact Form</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <form method="POST" action="{% url 'home' %}">
+                {{ contact_form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary text-uppercase rounded-0">Send
+                    Email</button>
+            </form>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+            <img src="{{ MEDIA_URL }}/email.jpg" class="w-100 rounded" alt="Email">
+        </div>
+    </div>
+</div>
 {% endblock %}
