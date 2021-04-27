@@ -60,3 +60,7 @@ body {
 .form-group {
     margin-bottom: 10px;
 }
+
+.view-height {
+    height: 75vh;
+}
