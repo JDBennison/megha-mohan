@@ -3,7 +3,7 @@ from .models import Image
 
 
 def gallery(request):
-    """A view to show all blog posts"""
+    """A view to show all images"""
 
     images = Image.objects.order_by('added_on')
 
