@@ -64,3 +64,25 @@ body {
 .view-height {
     height: 75vh;
 }
+
+.article-image {
+    width: 414px;
+    height: 232px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.article-card {
+    text-decoration: none;
+}
+
+.card {
+    transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+}
+
+.card:hover {
+    background-color: #CED4DA;
+}
