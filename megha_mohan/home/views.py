@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from .forms import ContactForm
+from articles.models import Article
 
 
 def index(request):
     """ A view to return the index page """
+    articles = Article.objects.order_by('-date_published')[:3]
     contact_form = ContactForm()
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
@@ -16,5 +18,6 @@ def index(request):
                 'jamesbennison88@gmail.com', from_email])
     context = {
         'contact_form': contact_form,
+        'articles': articles,
     }
     return render(request, 'home/index.html', context)
